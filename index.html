@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Junakiri</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/524c5a650e.js" crossorigin="anonymous"></script>
+    <script>
+        function btn1() {
+            var chat_box1 = document.getElementById('cb1');
+            var img = document.getElementById('img');
+            var aa = document.getElementById('aa');
+            var ab = document.getElementById('ab');
+            if (box.style.display = 'block') {
+                document.getElementById("top").innerHTML = "Sad to hear that";
+                document.getElementById("thoughts").innerHTML = "Hope you recover soon";
+                document.getElementById("img").src = "recover.png";
+                ab.style.display = 'none';
+                aa.style.display = 'none';
+                ac.style.display = 'block';
+            }
+        }
+        function btn2() {
+            var box = document.getElementById('box');
+            var animate = document.getElementById('hb');
+            var aa = document.getElementById('aa');
+            var ab = document.getElementById('ab');
+            var ac = document.getElementById('ac');
+            if ((box.style.display = 'block') && (animate.style.display != 'block')) {
+                box.style.display = 'none';
+                animate.style.display = 'block';
+            }
+        }
+        function btn3() {
+            var box = document.getElementById('box');
+            var animate = document.getElementById('hb');
+            var aa = document.getElementById('aa');
+            var ab = document.getElementById('ab');
+            var ac = document.getElementById('ac');
+            if ((box.style.display = 'block') && (animate.style.display != 'block')) {
+                box.style.display = 'none';
+                animate.style.display = 'block';
+            }
+        }
+        function hb() {
+            var box = document.getElementById('box');
+            var animate = document.getElementById('hb');
+            var step2 = document.getElementById('new');
+            var af = document.getElementById('af');
+            var img = document.getElementById('img');
+            var aa = document.getElementById('aa');
+            var ab = document.getElementById('ab');
+            if ((box.style.display = 'none') && (animate.style.display = 'block') && (step2.style.display != 'none')) {
+                box.style.display = 'block';
+                af.style.display = 'block';
+                animate.style.display = 'none';
+                document.getElementById("top").innerHTML = "I hope you like it";
+                document.getElementById("thoughts").innerHTML = "Wanted to ask you";
+                document.getElementById("img").src = "teddy.png";
+                step2.style.display = "none";
+                aa.style.display = "none";
+                ab.style.display = "none";
+                ac.style.display = 'none';
+            }
+        }
+        function btn6() {
+            var box = document.getElementById('box');
+            var animate = document.getElementById('hb');
+            // var img = document.getElementById('img');
+            var step2 = document.getElementById('new');
+            var img = document.getElementById('img');
+            var aa = document.getElementById('aa');
+            var ab = document.getElementById('ab');
+            if ((box.style.display != 'none') && (step2.style.display = 'none')) {
+                box.style.display = 'block';
+                step2.style.display = 'block';
+                animate.style.display = 'none';
+                document.getElementById("top").innerHTML = "If i could take you out";
+                document.getElementById("thoughts").innerHTML = "Would you like to join ?";
+                document.getElementById("img").src = "propose.png";
+                aa.style.display = 'none';
+                ab.style.display = 'none';
+                ac.style.display = 'none';
+                af.style.display = 'none';
+            }
+        }
+        function btn4() {
+            var box = document.getElementById('box');
+            var reject = document.getElementById('reject');
+            var body = document.getElementsByTagName('body');
+            if ((box.style.display != 'none') && (reject.style.display = 'none')) {
+                box.style.display = 'none';
+                reject.style.display = 'block';
+                body.style.background = "black";
+            }
+        }
+        function btn5() {
+            var box = document.getElementById('box');
+            var celeb = document.getElementById('pataka');
+            var accept = document.getElementById('accept');
+            if ((box.style.display != 'none') && (accept.style.display = 'none') && (celeb.style.display = 'none')) {
+                box.style.display = 'none';
+                celeb.style.display = 'block';
+                accept.style.display = 'block';
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <img class="man" src="msn.png">
+    <audio controls autoplay="on" src="Tourch.mp3" loop></audio>
+    <div class="box" id="box">
+        <div class="chat_box1" id="cb1">
+            <marquee scrolldelay="300" from="left"><i class="fa-solid fa-heart"></i><a href="junakiri.html">Ammu</a><i
+            class="fa-solid fa-heart"></i></marquee>
+            <p id="top">Hey cutie</p>
+            <h4 id="thoughts">You fine there ?</h4>
+            <img id="img" src="first.png">
+            <input class="btn1" type="button" id="aa" value="No" onclick="btn1()">
+            <input class="btn2" type="button" id="ab" value="Yes" onclick="btn2()">
+            <input class="btn3" type="button" id="ac" value="Next" onclick="btn3()">
+            <div class="new" id="new">
+                <input class="btn5" type="button" id="ad" value="No" onclick="btn4()">
+                <input class="btn6" type="button" id="ae" value="Yes" onclick="btn5()">
+            </div>
+            <input class="btn7" type="button" id="af" value="?" onclick="btn6()">
+        </div>
+    </div>
+    <div class="animate" id="hb">
+      <div class="inner">
+        <input class="btn4" type="button" value="Next" onclick="hb()">
+        <div class="float">
+            <img src="red1.png" alt="">
+            <img src="green.png" alt="">
+            <img src="red.png" alt="">
+            <img src="bunch1.png" alt="bunchofballoon">
+            <img src="love.png" alt="">
+            <img src="red1.png" alt="">
+            <img src="bh.png" alt="">
+            <img src="bunch2.png" alt="">
+            <img src="bh.png" alt="">
+            <img src="green.png" alt="">
+            <img src="red.png" alt="">
+            <img src="love.png" alt="">
+            <img src="red1.png" alt="">
+            <img src="green.png" alt="">
+            <img src="bh.png" alt="">
+            <img src="red.png" alt="">
+            <img src="love.png" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="reject" id="reject">
+        <img src="reject.png">
+        <p>Ahh it hurts,<br>I shall wait for you<i class="fa-solid fa-heart-crack"></i></p>
+    </div>
+    <div class="accept" id="accept">
+        <img src="accept.png">
+        <p>Yeppy, Lets meet soon<i class="fa-solid fa-heart"></i></p>
+    </div>
+    <div class="pataka" id="pataka">
+        <div class="patak">
+            <img src="pataka.png" alt="">
+            <img src="pataka.png" alt="">
+            <img src="pataka.png" alt="">
+        </div>
+    </div>
+    <div class="bayan">
+        <p>तिमी फुल हौ फुलेकी मनप्रित मेरी अर्धाङ्गिनी <br>
+            तिमी केस लिई हिडेकी ऐनानै लज्जित स्वप्न सुन्दरी <br>
+            जुन चन्द्रकी खास कणले बनेकी तिमी राजकुमारी <br>
+            आभास अविरल अनन्तकी सर्बश्रेष्ठ महिमा तिमी <br>
+            गीतकी भाका अनि निर्त्यकी अभिनाश तिमी <br>
+            स्वर्गकी मन मलिका आहाँ सौन्दर्यकी खानी तिमी <br>
+            तिमी मेरी बस मेरी जुनेली रातकी जुनकिरी ।<br><br>
+            विहान की उमङ्ग अनित रातकी निन्द्रा तिमी<br>
+            म अन्ध्यारो वादल लागेको चम्किरहेको तारा मुनी<br>
+            फुलको बगैंचा म भमरा भन्किएको सुगन्ध तिमी<br>
+            थोपा थोपा जीवन मेरो मन्द जल सागर तिमी<br>
+            तिमी चित्र हौ संसारकी सप्त रङ्गी इन्द्रेणी<br>
+            म कल्पनाको खुला किताब तिमी भरिएकी निन्द सपनी<br>
+            आशा इच्छ्या चाहना म सन्तुष्टकी अभिलेख तिमी<br>
+            तिमी जितकी रहस्य जुनेली रातकी जुनकिरी । <br>
+            <a href="lovestory.html">Read more...</a>
+            </p>
+    </div>
+</body>
+</html>
